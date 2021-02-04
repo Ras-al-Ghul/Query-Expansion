@@ -1,4 +1,4 @@
-
-.idea/misc.xml
-.idea/Query-Expansion.iml
-.idea/workspace.xml
+.config.py
+.idea/*
+__pycache__/*
+query_expansion/__pycache__/*

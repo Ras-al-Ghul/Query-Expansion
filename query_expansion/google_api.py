@@ -1,12 +1,13 @@
 from googleapiclient.discovery import build
+from config import search_engine_id, key
 
 
-def google_query(query_terms):
-    search = build("customsearch", "v1", developerKey="AIzaSyAENB1D2LxKbqSmJqdRSKaRVT67_XSKJ_c");
+def search(query_terms):
+    search = build("customsearch", "v1", developerKey=key)
 
     result = search.cse().list(
         q=query_terms,
-        cx="14e471d67764dc04d").execute()
+        cx=search_engine_id).execute()
 
     items = result['items']
     prettify_results = [{
