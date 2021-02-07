@@ -1,5 +1,6 @@
 from pprint import pprint
 
+
 def get_feedback(search_result):
     relevant_documents = []
     non_relevant_document = []

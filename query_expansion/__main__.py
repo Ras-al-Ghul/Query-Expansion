@@ -1,6 +1,7 @@
 import sys
 from query_expansion import google_api as google
 from query_expansion import user_feedback as user
+from query_expansion import url_content as content
 
 
 def main():
@@ -17,8 +18,11 @@ def main():
             return
 
     results = google.search(query)
+
     relevant_documents, non_relevant_documents = user.get_feedback(results)
-    #print(relevant_documents, non_relevant_documents)
+    content.extract_content(relevant_documents)
+    content.extract_content(non_relevant_documents)
+    #print(relevant_documents[0])
 
 
 if __name__ == '__main__':

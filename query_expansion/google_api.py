@@ -3,9 +3,9 @@ from config import search_engine_id, key
 
 
 def search(query_terms):
-    search = build("customsearch", "v1", developerKey=key)
+    search_result = build("customsearch", "v1", developerKey=key)
 
-    result = search.cse().list(
+    result = search_result.cse().list(
         q=query_terms,
         cx=search_engine_id).execute()
 
