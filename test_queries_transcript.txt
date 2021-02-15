@@ -1,0 +1,624 @@
+
+=======================================Query: cases==================================================
+
+(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project1\Query-Expansion>python -m query_expansion cases 0.9
+Query:  cases
+{'id': 0,
+ 'summary': 'From court and program offices in the Bronx, Brooklyn, and '
+            'Manhattan, CASES \n'
+            'provides community-based alternatives to jail and prison. These '
+            'programs \n'
+            'address\xa0...',
+ 'title': 'CASES: Home',
+ 'url': 'https://www.cases.org/'}
+Relevant? (y/n)n
+{'id': 1,
+ 'summary': 'Live statistics and coronavirus news tracking the number of '
+            'confirmed cases, \n'
+            'recovered patients, tests, and death toll due to the COVID-19 '
+            'coronavirus from\xa0...',
+ 'title': 'Coronavirus Update (Live): 109,459,931 Cases and 2,412,925 ...',
+ 'url': 'https://www.worldometers.info/coronavirus/?utm_campaign=homeAdvegas1?'}
+Relevant? (y/n)y
+{'id': 2,
+ 'summary': 'Confirmed cases by age group by date of symptom onset or '
+            'diagnosis; Percent of \n'
+            'confirmed or probable cases by demographics and region; Percent '
+            'of cases\xa0...',
+ 'title': 'COVID-19: Wisconsin Cases | Wisconsin Department of Health ...',
+ 'url': 'https://www.dhs.wisconsin.gov/covid-19/cases.htm'}
+Relevant? (y/n)y
+{'id': 3,
+ 'summary': '',
+ 'title': 'Casenet',
+ 'url': 'https://www.courts.mo.gov/casenet/cases/nameSearch.do'}
+Relevant? (y/n)n
+{'id': 4,
+ 'summary': 'From January 1 to December 31, 2019, 1,282* individual cases of '
+            'measles were \n'
+            'confirmed in 31 states. This is the greatest number of cases '
+            'reported in the U.S.\xa0...',
+ 'title': 'Measles Cases and Outbreaks | CDC',
+ 'url': 'https://www.cdc.gov/measles/cases-outbreaks.html'}
+Relevant? (y/n)n
+{'id': 5,
+ 'summary': '7 hours ago ... Tens of thousands of new cases are reported daily '
+            'nationwide. In the graphics \n'
+            'below, explore the trends in your state. View the data via a '
+            'heat\xa0...',
+ 'title': 'Coronavirus Update: Maps And Charts For U.S. Cases And Deaths ...',
+ 'url': 'https://www.npr.org/sections/health-shots/2020/09/01/816707182/map-tracking-the-spread-of-the-coronavirus-in-the-u-s'}
+Relevant? (y/n)y
+{'id': 6,
+ 'summary': 'Case and testing information by city/town; Contact tracing cases '
+            'and outreach; \n'
+            'Individuals released from isolation (recovered); Cases and deaths '
+            'in Long Term\n'
+            '\xa0...',
+ 'title': 'COVID-19 Response Reporting | Mass.gov',
+ 'url': 'https://www.mass.gov/info-details/covid-19-response-reporting'}
+Relevant? (y/n)y
+{'id': 7,
+ 'summary': 'Case-Fatality Ratio (%) = Number recorded deaths / Number cases. '
+            'US Testing \n'
+            'Rate: = total test results per 100,000 persons. The "total test '
+            'results" are equal to "\n'
+            '\xa0...',
+ 'title': 'Coronavirus COVID-19 (2019-nCoV)',
+ 'url': 'https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6'}
+Relevant? (y/n)y
+{'id': 8,
+ 'summary': 'Visit Your Profile. Your Avatar. logout. Sign In To PBS KIDS. '
+            'Apps · Shop · \n'
+            'Parents · WPTD WPTD station logo. TV Times; Settings. PBS KIDS '
+            'Settings. \n'
+            'Close\xa0...',
+ 'title': 'Odd Squad: Cases',
+ 'url': 'https://pbskids.org/oddsquad/games/cases'}
+Relevant? (y/n)n
+{'id': 9,
+ 'summary': 'The State of the Virus. Update for Feb. 12. Case numbers continue '
+            'to fall rapidly. \n'
+            'The country has averaged around 102,000 cases a day over the last '
+            'week\xa0...',
+ 'title': 'Coronavirus in the U.S.: Latest Map and Case Count - The New York '
+          '...',
+ 'url': 'https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html'}
+Relevant? (y/n)y
+Precision:  0.6
+Query:  cases coronavirus case
+{'id': 0,
+ 'summary': 'COVID-19 Cases by Week, 7-Day Average; Cumulative Case Rate by '
+            'County of \n'
+            '... CDC: NNDSS Surveillance Case Definitions: Coronavirus Disease '
+            '2019\xa0...',
+ 'title': 'Situation Update for COVID-19 - Minnesota Dept. of Health',
+ 'url': 'https://www.health.state.mn.us/diseases/coronavirus/situation.html'}
+Relevant? (y/n)y
+{'id': 1,
+ 'summary': 'Jump to: MapCases by stateHot spotsClusters. At least 1,080 new '
+            'coronavirus \n'
+            'deaths and 63,850 new cases were reported in the United States on '
+            'Feb. 14. \n'
+            'Over\xa0...',
+ 'title': 'Coronavirus in the U.S.: Latest Map and Case Count - The New York '
+          '...',
+ 'url': 'https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html'}
+Relevant? (y/n)y
+{'id': 2,
+ 'summary': 'Daily and cumulative reports on Massachusetts COVID-19 cases, '
+            'testing, and ... \n'
+            'Additional reports include nursing facility data, cases by '
+            'city/town, residents ... \n'
+            '2020, and includes testing, case, and death data and relevant '
+            'demographics. ... \n'
+            'This is part of: Information on the Outbreak of Coronavirus '
+            'Disease 2019 (COVID-\n'
+            '19)\xa0...',
+ 'title': 'COVID-19 Response Reporting | Mass.gov',
+ 'url': 'https://www.mass.gov/info-details/covid-19-response-reporting'}
+Relevant? (y/n)y
+{'id': 3,
+ 'summary': "7 hours ago ... This type of visualization highlights a state's "
+            'daily growth or decline relative to the \n'
+            'overall size of its outbreak. When both new and total case and\xa0'
+            '...',
+ 'title': 'Coronavirus Update: Maps And Charts For U.S. Cases And Deaths ...',
+ 'url': 'https://www.npr.org/sections/health-shots/2020/09/01/816707182/map-tracking-the-spread-of-the-coronavirus-in-the-u-s'}
+Relevant? (y/n)y
+{'id': 4,
+ 'summary': 'Reported Cases and Deaths by Country or Territory ... On January '
+            '30, the novel \n'
+            'coronavirus total case count surpassed that for SARS (which '
+            'affected 8,096\xa0...',
+ 'title': 'Coronavirus Update (Live): 109,503,044 Cases and 2,413,867 ...',
+ 'url': 'https://www.worldometers.info/coronavirus/'}
+Relevant? (y/n)y
+{'id': 5,
+ 'summary': 'Total case counts include confirmed and probable cases. ... Each '
+            'week, the \n'
+            'White House Coronavirus Task Force provides a profile to the '
+            'administration that\n'
+            '\xa0...',
+ 'title': 'Pennsylvania Data',
+ 'url': 'https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx'}
+Relevant? (y/n)y
+{'id': 6,
+ 'summary': '5 days ago ... This data dashboard provides detailed information '
+            'about cases and deaths from \n'
+            'Coronavirus (COVID-19) in Santa Clara County. ... Case '
+            'Investigation and \n'
+            'Contact Tracing (CICT) Dashboard Provides information about '
+            'case\xa0...',
+ 'title': 'COVID-19 Data and Reports - Novel Coronavirus (COVID-19 ...',
+ 'url': 'https://www.sccgov.org/sites/covid19/Pages/dashboard.aspx'}
+Relevant? (y/n)y
+{'id': 7,
+ 'summary': 'Track the spread of coronavirus in the United States with maps '
+            'and updates on \n'
+            'cases and deaths.',
+ 'title': 'Tracking Covid-19 cases in the US',
+ 'url': 'https://www.cnn.com/interactive/2020/health/coronavirus-us-maps-and-cases/'}
+Relevant? (y/n)y
+{'id': 8,
+ 'summary': '(See LTC facility outbreak definition.) Cases by county. About '
+            'our case counts: \n'
+            'We currently update our case totals each day based on test '
+            'results\xa0...',
+ 'title': 'Coronavirus COVID-19 - Mississippi State Department of Health',
+ 'url': 'https://msdh.ms.gov/coronavirus'}
+Relevant? (y/n)y
+{'id': 9,
+ 'summary': "Visit the Maryland Department of Health's official resource for "
+            'the Coronavirus \n'
+            'Disease 2019 (COVID-19) outbreak. ... Case and death data reflect '
+            'Maryland \n'
+            'residents only. Death data ... Data for ZIP codes with 7 or fewer '
+            'cases are \n'
+            'suppressed.',
+ 'title': 'Coronavirus - Maryland Department of Health',
+ 'url': 'https://coronavirus.maryland.gov/'}
+Relevant? (y/n)y
+Precision:  1.0
+Terminated in 2 iterations.
+
+==================================================Query: per se =========================================================
+(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project1\Query-Expansion>python -m query_expansion "per se" 0.9
+Query:  per se
+{'id': 0,
+ 'summary': 'Per Se Front Door. center. Per Se Front Door. center. Per Se '
+            'Front Door. center. \n'
+            'Per Se Front Door. center. Per Se Front Door. center. Per Se '
+            'Front Door. center.',
+ 'title': 'Per Se | Thomas Keller Restaurant Group',
+ 'url': 'https://www.thomaskeller.com/perseny'}
+Relevant? (y/n)y
+{'id': 1,
+ 'summary': 'Per se may refer to: per se, a Latin phrase meaning "by itself" '
+            'or "in itself". Illegal \n'
+            'per se, the legal usage in criminal and antitrust law; Negligence '
+            'per se, legal\xa0...',
+ 'title': 'Per se - Wikipedia',
+ 'url': 'https://en.wikipedia.org/wiki/Per_se'}
+Relevant? (y/n)n
+{'id': 2,
+ 'summary': 'We generally use per se to distinguish between something in its '
+            'narrow sense \n'
+            'and some larger thing that it represents. Thus, you may have no '
+            'objection to\xa0...',
+ 'title': 'Perse | Definition of Perse by Merriam-Webster',
+ 'url': 'https://www.merriam-webster.com/dictionary/perse'}
+Relevant? (y/n)n
+{'id': 3,
+ 'summary': "Jan 12, 2016 ... Such is Per Se's mystique that I briefly "
+            'wondered if the failure to bring her a new \n'
+            "napkin could have been intentional. The restaurant's identity, "
+            'to\xa0...',
+ 'title': "At Thomas Keller's Per Se, Slips and Stumbles - The New York Times",
+ 'url': 'https://www.nytimes.com/2016/01/13/dining/pete-wells-per-se-review.html'}
+Relevant? (y/n)y
+{'id': 4,
+ 'summary': "Aug 11, 2017 ... 'Per se' is a Latin term which literally means, "
+            '“by itself”, “in itself” or “of itself”. This \n'
+            "means you're taking something out of its context to describe "
+            'it\xa0...',
+ 'title': 'Per se meaning, how to use per se in a sentence | Readable ...',
+ 'url': 'https://readable.com/blog/how-to-correctly-use-per-se/'}
+Relevant? (y/n)n
+{'id': 5,
+ 'summary': 'Borrowed from Latin per sē (“by itself”), from per (“by, '
+            'through”) and sē (“itself, \n'
+            'himself, herself, themselves”). PronunciationEdit. (UK) IPA: '
+            '/pəːˈseɪ/\xa0...',
+ 'title': 'per se - Wiktionary',
+ 'url': 'https://en.wiktionary.org/wiki/per_se'}
+Relevant? (y/n)n
+{'id': 6,
+ 'summary': "Per Se. Chef Thomas Keller's 3-Star Michelin restaurant "
+            'overlooking Columbus \n'
+            'Circle & Central Park located in New York City. '
+            'www.exploretock.com/perse.',
+ 'title': 'Per Se (@perseny) • Instagram photos and videos',
+ 'url': 'https://www.instagram.com/perseny/?hl=en'}
+Relevant? (y/n)y
+{'id': 7,
+ 'summary': 'Per Se, New York, NY. 56277 likes · 337 talking about this · '
+            '50035 were here. \n'
+            "The official page of Thomas Keller's Per Se.",
+ 'title': 'Per Se - Home - New York, New York - Menu, Prices, Restaurant ...',
+ 'url': 'https://www.facebook.com/perse/'}
+Relevant? (y/n)y
+{'id': 8,
+ 'summary': 'Oct 25, 2018 ... Per se laws in DUI or DWI cases generally '
+            'establish that once an individual is \n'
+            'shown to have a blood-alcohol concentration (BAC) at or above\xa0'
+            '...',
+ 'title': 'Per Se DUI Laws - FindLaw',
+ 'url': 'https://www.findlaw.com/dui/laws-resources/per-se-dui-laws.html'}
+Relevant? (y/n)n
+{'id': 9,
+ 'summary': 'per se. A Latin phrase meaning by itself, used to mean '
+            'intrinsically. Dictionary of \n'
+            'Unfamiliar Words by Diagram Group Copyright © 2008 by Diagram\xa0'
+            '...',
+ 'title': 'Per se - definition of per se by The Free Dictionary',
+ 'url': 'https://www.thefreedictionary.com/per+se'}
+Relevant? (y/n)n
+Precision:  0.4
+Query:  per se york keller
+{'id': 0,
+ 'summary': 'Per Se Front Door. center. Per Se Front Door. center. Per Se '
+            'Front Door. center. \n'
+            'Per Se Front Door. center. Per Se Front Door. center. Per Se '
+            'Front Door. center.',
+ 'title': 'Per Se | Thomas Keller Restaurant Group',
+ 'url': 'https://www.thomaskeller.com/perseny'}
+Relevant? (y/n)y
+{'id': 1,
+ 'summary': 'Jan 12, 2016 ... Keller is still trotting them out. The name Per '
+            'Se, after all, was chosen to suggest \n'
+            "that New York would not simply reflect California's glory; "
+            'this\xa0...',
+ 'title': "At Thomas Keller's Per Se, Slips and Stumbles - The New York Times",
+ 'url': 'https://www.nytimes.com/2016/01/13/dining/pete-wells-per-se-review.html'}
+Relevant? (y/n)y
+{'id': 2,
+ 'summary': "Opened in 2004, Per Se is Thomas Keller's acclaimed New York "
+            'interpretation of \n'
+            'The French Laundry in the Time Warner Center at Columbus Circle. '
+            'Designed\xa0...',
+ 'title': 'Restaurant | Thomas Keller Restaurant Group',
+ 'url': 'https://www.thomaskeller.com/new-york-new-york/per-se/restaurant'}
+Relevant? (y/n)y
+{'id': 3,
+ 'summary': 'Sep 8, 2016 ... Can Thomas Keller Turn Around Per Se? The '
+            "country's leading chef responds to \n"
+            'that devastating New York Times review and talks about the\xa0...',
+ 'title': 'Thomas Keller Responds to New York Times Review of Per Se ...',
+ 'url': 'https://www.townandcountrymag.com/leisure/arts-and-culture/a7685/thomas-keller-per-se-new-york-times-review/'}
+Relevant? (y/n)y
+{'id': 4,
+ 'summary': 'The French Laundry · Bouchon Bistro · Bouchon Bakery · Ad Hoc + '
+            'Addendum · \n'
+            'La Calenda; New York; Per Se · Bouchon Bakery & Café Columbus '
+            'Circle',
+ 'title': "Today's Menus | Thomas Keller Restaurant Group",
+ 'url': 'https://www.thomaskeller.com/new-york-new-york/per-se/todays-menus'}
+Relevant? (y/n)y
+{'id': 5,
+ 'summary': "Jul 24, 2019 ... Charting the recent evolution of Thomas Keller's "
+            "Per Se isn't entirely ... New York \n"
+            'being the financial capital of the U.S., there is no shortage '
+            'of\xa0...',
+ 'title': 'Manhattan Restaurant Per Se from Thomas Keller May Finally Be a ...',
+ 'url': 'https://ny.eater.com/2019/7/24/20706200/per-se-thomas-keller-corey-chow-nyc-restaurants'}
+Relevant? (y/n)y
+{'id': 6,
+ 'summary': 'Per Se is a New American and French restaurant located on the '
+            'fourth floor of the \n'
+            'Time Warner ... Thomas Keller opened Per Se in February 2004. ... '
+            'gives Per Se \n'
+            'a rating of 4.6/5 for food, putting it in their top 50 '
+            'restaurants of New York City.',
+ 'title': 'Per Se (restaurant) - Wikipedia',
+ 'url': 'https://en.wikipedia.org/wiki/Per_Se_(restaurant)'}
+Relevant? (y/n)y
+{'id': 7,
+ 'summary': 'Sep 12, 2016 ... Wells pulled no punches in the review, the worst '
+            'Keller has probably gotten for a \n'
+            'restaurant ... service, and "among the worst food deals in New '
+            'York." ... Per Se \n'
+            'chef de cuisine Eli Kaimeh has held on to his job, and tells '
+            'Town\xa0...',
+ 'title': 'Thomas Keller Opens Up About Terrible NYT Review, And His ...',
+ 'url': 'https://sfist.com/2016/09/12/thomas_keller_opens_up_about_terrib/'}
+Relevant? (y/n)y
+{'id': 8,
+ 'summary': "An experience at Thomas Keller's Per Se is one to be savored, "
+            'treasured, \n'
+            "recounted and remembered. Once you've been welcomed by the "
+            'charming team, \n'
+            'the\xa0...',
+ 'title': 'Per Se – New York - a MICHELIN Guide Restaurant',
+ 'url': 'https://guide.michelin.com/en/new-york-state/new-york/restaurant/per-se'}
+Relevant? (y/n)y
+{'id': 9,
+ 'summary': "Oct 21, 2013 ... Thomas Keller, America's most celebrated chef "
+            'and creator of the French \n'
+            'Laundry ... invites us into the kitchen of his four-star New York '
+            'City resta.',
+ 'title': "Thomas Keller Gives a Tour of Per Se's Kitchen - YouTube",
+ 'url': 'https://www.youtube.com/watch?v=Yji20MJ5VaE'}
+Relevant? (y/n)y
+Precision:  1.0
+Terminated in 2 iterations.
+
+======================================================Query: brin =========================================================
+
+(base) C:\Users\nidhe\Documents\Columbia\2021_Spring\AdvanceDatabases\Project1\Query-Expansion>python -m query_expansion "brin" 0.9
+Query:  brin
+{'id': 0,
+ 'summary': 'Sergey Mikhaylovich Brin is an American computer scientist and '
+            'Internet \n'
+            'entrepreneur. Together with Larry Page, he co-founded Google. '
+            'Brin was the \n'
+            'president\xa0...',
+ 'title': 'Sergey Brin - Wikipedia',
+ 'url': 'https://en.wikipedia.org/wiki/Sergey_Brin'}
+Relevant? (y/n)y
+{'id': 1,
+ 'summary': 'The official website of best-selling science fiction writer and '
+            'futurist DAVID BRIN.',
+ 'title': 'worlds of David Brin',
+ 'url': 'https://www.davidbrin.com/'}
+Relevant? (y/n)n
+{'id': 2,
+ 'summary': 'The litigation, transactional and compliance lawyers at Brin & '
+            'Brin have proven \n'
+            'success in some of the toughest Texas venues. We have represented '
+            'clients in a\n'
+            '\xa0...',
+ 'title': 'Brin & Brin LLC – Law Firm',
+ 'url': 'https://brinandbrin.com/'}
+Relevant? (y/n)n
+{'id': 3,
+ 'summary': 'Sergey Brin stepped down as president of Alphabet, parent company '
+            'of Google, \n'
+            'in December 2019 but remains a controller shareholder and a board '
+            'member.',
+ 'title': 'Sergey Brin',
+ 'url': 'https://www.forbes.com/profile/sergey-brin/'}
+Relevant? (y/n)y
+{'id': 4,
+ 'summary': 'The Art of Brin Levinson.',
+ 'title': 'Brin Levinson',
+ 'url': 'https://www.brinlevinson.com/'}
+Relevant? (y/n)n
+{'id': 5,
+ 'summary': '67.1. Introduction. 67.1.1. Index Maintenance. BRIN stands for '
+            'Block Range \n'
+            'Index. BRIN is designed for handling very large tables\xa0...',
+ 'title': 'Documentation: 13: 67.1. Introduction - PostgreSQL',
+ 'url': 'https://www.postgresql.org/docs/13/brin-intro.html'}
+Relevant? (y/n)n
+{'id': 6,
+ 'summary': 'Brin Glass provides commercial glass services including wholesale '
+            'distribution \n'
+            'and fabrication of glass and architectural aluminum products, '
+            'glass service and\xa0...',
+ 'title': 'Brin Glass: Commercial Glass Company',
+ 'url': 'https://www.bringlass.com/'}
+Relevant? (y/n)n
+{'id': 7,
+ 'summary': 'BRIN stands for Block Range Index. BRIN is designed for handling '
+            'very large \n'
+            'tables in which certain columns have some natural correlation '
+            'with their physical\n'
+            '\xa0...',
+ 'title': 'Documentation: 9.5: Introduction - PostgreSQL',
+ 'url': 'https://www.postgresql.org/docs/9.5/brin-intro.html'}
+Relevant? (y/n)n
+{'id': 8,
+ 'summary': 'NounEdit. brin (plural brins). One of the radiating sticks of a '
+            'fan. The outermost \n'
+            'are larger and longer, and are called panaches. (Can we find and '
+            'add a\xa0...',
+ 'title': 'brin - Wiktionary',
+ 'url': 'https://en.wiktionary.org/wiki/brin'}
+Relevant? (y/n)n
+{'id': 9,
+ 'summary': "The Born & Raced In Nebraska Series (BRIN) consists of Nebraska's "
+            'most talked \n'
+            'about 10K races each year: the Leprechaun Chase, Cornfield '
+            'Cornfield, and\xa0...',
+ 'title': 'Born & Raced In Nebraska | BRIN Running Series',
+ 'url': 'https://www.bornandracedne.com/'}
+Relevant? (y/n)n
+Precision:  0.2
+Query:  brin sergey google
+{'id': 0,
+ 'summary': 'Sergey Mikhaylovich Brin is an American computer scientist and '
+            'Internet \n'
+            'entrepreneur. Together with Larry Page, he co-founded Google. '
+            'Brin was the \n'
+            'president\xa0...',
+ 'title': 'Sergey Brin - Wikipedia',
+ 'url': 'https://en.wikipedia.org/wiki/Sergey_Brin'}
+Relevant? (y/n)y
+{'id': 1,
+ 'summary': 'Dec 4, 2019 ... Larry Page and Sergey Brin founded Google in 1996 '
+            'on the back of an algorithm, \n'
+            'turned it into one of the most valuable companies in the world\xa0'
+            '...',
+ 'title': 'Google co-founders Larry Page and Sergey Brin: a timeline of their '
+          '...',
+ 'url': 'https://www.theverge.com/2019/12/4/20994361/google-alphabet-larry-page-sergey-brin-sundar-pichai-co-founders-ceo-timeline'}
+Relevant? (y/n)y
+{'id': 2,
+ 'summary': 'Sergey Brin stepped down as president of Alphabet, parent company '
+            'of Google, \n'
+            'in December 2019 but remains a controller shareholder and a board '
+            'member.',
+ 'title': 'Sergey Brin',
+ 'url': 'https://www.forbes.com/profile/sergey-brin/'}
+Relevant? (y/n)y
+{'id': 3,
+ 'summary': 'Dec 4, 2019 ... Google cofounder Sergey Brin is stepping down as '
+            "Alphabet's president. Take a \n"
+            'look inside his eccentric and wildly successful life. · Sergey '
+            'Brin,\xa0...',
+ 'title': 'Sergey Brin: Life of Google cofounder, former Alphabet president',
+ 'url': 'https://www.businessinsider.com/sergey-brin-google-alphabet-life-photos-2016-12'}
+Relevant? (y/n)y
+{'id': 4,
+ 'summary': 'Dec 4, 2019 ... Larry Page and Sergey Brin are stepping back from '
+            'the day-to-day running of \n'
+            "Google's parent company.",
+ 'title': 'Google founders Larry Page and Sergey Brin step back from top ...',
+ 'url': 'https://www.bbc.com/news/technology-50653345'}
+Relevant? (y/n)y
+{'id': 5,
+ 'summary': 'Dec 4, 2019 ... Sergey Brin is a computer scientist who created '
+            'Google with Larry Page, the two \n'
+            "becoming billionaires as Google developed into the world's\xa0...",
+ 'title': 'Sergey Brin - Education, Google & Wife - Biography',
+ 'url': 'https://www.biography.com/business-figure/sergey-brin'}
+Relevant? (y/n)y
+{'id': 6,
+ 'summary': "Dec 3, 2019 ... Ending an era at the Internet's biggest search "
+            'company, Google co-founders \n'
+            'Sergey Brin and Larry Page end their leadership roles. Sundar\xa0'
+            '...',
+ 'title': 'Google Founders Sergey Brin, Larry Page Step Down; Pichai ...',
+ 'url': 'https://www.npr.org/2019/12/03/784570156/google-founders-brin-page-step-down-pichai-takes-over-as-alphabet-ceo'}
+Relevant? (y/n)y
+{'id': 7,
+ 'summary': "May 17, 2013 ... It's not a demo, more of a philosophical "
+            'argument: Why did Sergey Brin and his \n'
+            'team at Google want to build an eye-mounted camera/computer\xa0'
+            '...',
+ 'title': 'Sergey Brin: Why Google Glass? | TED Talk',
+ 'url': 'https://www.ted.com/talks/sergey_brin_why_google_glass?language=en'}
+Relevant? (y/n)y
+{'id': 8,
+ 'summary': 'Sergey Brin, a native of Moscow, received a bachelor of science '
+            'degree with \n'
+            'honors in mathematics and computer science from the University of '
+            'Maryland at\xa0...',
+ 'title': 'Sergey Brin – Google Research',
+ 'url': 'https://research.google/people/SergeyBrin/'}
+Relevant? (y/n)y
+{'id': 9,
+ 'summary': "May 17, 2013 ... It's not a demo, more of a philosophical "
+            'argument: Why did Sergey Brin and his \n'
+            'team at Google want to build an eye-mounted camera/computer\xa0'
+            '...',
+ 'title': 'Sergey Brin: Why Google Glass? - YouTube',
+ 'url': 'https://www.youtube.com/watch?v=IessjPY9gwI'}
+Relevant? (y/n)y
+Precision:  1.0
+Terminated in 2 iterations.
+
+ 'title': 'Documentation: 9.5: Introduction - PostgreSQL',
+ 'url': 'https://www.postgresql.org/docs/9.5/brin-intro.html'}
+Relevant? (y/n)n
+{'id': 8,
+ 'summary': 'NounEdit. brin (plural brins). One of the radiating sticks of a '
+            'fan. The outermost \n'
+            'are larger and longer, and are called panaches. (Can we find and '
+            'add a\xa0...',
+ 'title': 'brin - Wiktionary',
+ 'url': 'https://en.wiktionary.org/wiki/brin'}
+Relevant? (y/n)n
+{'id': 9,
+ 'summary': "The Born & Raced In Nebraska Series (BRIN) consists of Nebraska's "
+            'most talked \n'
+            'about 10K races each year: the Leprechaun Chase, Cornfield '
+            'Cornfield, and\xa0...',
+ 'title': 'Born & Raced In Nebraska | BRIN Running Series',
+ 'url': 'https://www.bornandracedne.com/'}
+Relevant? (y/n)n
+Precision:  0.2
+Query:  brin sergey google
+{'id': 0,
+ 'summary': 'Sergey Mikhaylovich Brin is an American computer scientist and '
+            'Internet \n'
+            'entrepreneur. Together with Larry Page, he co-founded Google. '
+            'Brin was the \n'
+            'president\xa0...',
+ 'title': 'Sergey Brin - Wikipedia',
+ 'url': 'https://en.wikipedia.org/wiki/Sergey_Brin'}
+Relevant? (y/n)y
+{'id': 1,
+ 'summary': 'Dec 4, 2019 ... Larry Page and Sergey Brin founded Google in 1996 '
+            'on the back of an algorithm, \n'
+            'turned it into one of the most valuable companies in the world\xa0'
+            '...',
+ 'title': 'Google co-founders Larry Page and Sergey Brin: a timeline of their '
+          '...',
+ 'url': 'https://www.theverge.com/2019/12/4/20994361/google-alphabet-larry-page-sergey-brin-sundar-pichai-co-founders-ceo-timeline'}
+Relevant? (y/n)y
+{'id': 2,
+ 'summary': 'Sergey Brin stepped down as president of Alphabet, parent company '
+            'of Google, \n'
+            'in December 2019 but remains a controller shareholder and a board '
+            'member.',
+ 'title': 'Sergey Brin',
+ 'url': 'https://www.forbes.com/profile/sergey-brin/'}
+Relevant? (y/n)y
+{'id': 3,
+ 'summary': 'Dec 4, 2019 ... Google cofounder Sergey Brin is stepping down as '
+            "Alphabet's president. Take a \n"
+            'look inside his eccentric and wildly successful life. · Sergey '
+            'Brin,\xa0...',
+ 'title': 'Sergey Brin: Life of Google cofounder, former Alphabet president',
+ 'url': 'https://www.businessinsider.com/sergey-brin-google-alphabet-life-photos-2016-12'}
+Relevant? (y/n)y
+{'id': 4,
+ 'summary': 'Dec 4, 2019 ... Larry Page and Sergey Brin are stepping back from '
+            'the day-to-day running of \n'
+            "Google's parent company.",
+ 'title': 'Google founders Larry Page and Sergey Brin step back from top ...',
+ 'url': 'https://www.bbc.com/news/technology-50653345'}
+Relevant? (y/n)y
+{'id': 5,
+ 'summary': 'Dec 4, 2019 ... Sergey Brin is a computer scientist who created '
+            'Google with Larry Page, the two \n'
+            "becoming billionaires as Google developed into the world's\xa0...",
+ 'title': 'Sergey Brin - Education, Google & Wife - Biography',
+ 'url': 'https://www.biography.com/business-figure/sergey-brin'}
+Relevant? (y/n)y
+{'id': 6,
+ 'summary': "Dec 3, 2019 ... Ending an era at the Internet's biggest search "
+            'company, Google co-founders \n'
+            'Sergey Brin and Larry Page end their leadership roles. Sundar\xa0'
+            '...',
+ 'title': 'Google Founders Sergey Brin, Larry Page Step Down; Pichai ...',
+ 'url': 'https://www.npr.org/2019/12/03/784570156/google-founders-brin-page-step-down-pichai-takes-over-as-alphabet-ceo'}
+Relevant? (y/n)y
+{'id': 7,
+ 'summary': "May 17, 2013 ... It's not a demo, more of a philosophical "
+            'argument: Why did Sergey Brin and his \n'
+            'team at Google want to build an eye-mounted camera/computer\xa0'
+            '...',
+ 'title': 'Sergey Brin: Why Google Glass? | TED Talk',
+ 'url': 'https://www.ted.com/talks/sergey_brin_why_google_glass?language=en'}
+Relevant? (y/n)y
+{'id': 8,
+ 'summary': 'Sergey Brin, a native of Moscow, received a bachelor of science '
+            'degree with \n'
+            'honors in mathematics and computer science from the University of '
+            'Maryland at\xa0...',
+ 'title': 'Sergey Brin – Google Research',
+ 'url': 'https://research.google/people/SergeyBrin/'}
+Relevant? (y/n)y
+{'id': 9,
+ 'summary': "May 17, 2013 ... It's not a demo, more of a philosophical "
+            'argument: Why did Sergey Brin and his \n'
+            'team at Google want to build an eye-mounted camera/computer\xa0'
+            '...',
+ 'title': 'Sergey Brin: Why Google Glass? - YouTube',
+ 'url': 'https://www.youtube.com/watch?v=IessjPY9gwI'}
+Relevant? (y/n)y
+Precision:  1.0
+
