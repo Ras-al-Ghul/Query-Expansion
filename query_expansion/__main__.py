@@ -4,9 +4,9 @@ import pickle
 
 from copy import deepcopy
 
-import rocchio
+from . import rocchio
 from . import search_scrape as sc
-from indexer import Index
+from .indexer import Index
 
 
 def main():
@@ -44,7 +44,7 @@ def main():
         t1.start()
         t2.start()
         t2.join()
-        
+
         t3 = threading.Thread(target=sc.process_input,
                 args=(results,))
         t3.start()

@@ -1,6 +1,6 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from query_expansion.search_scrape import remove_punctuation_listify
+from .search_scrape import remove_punctuation_listify
 
 class Index:
 

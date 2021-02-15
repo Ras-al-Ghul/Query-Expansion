@@ -2,9 +2,9 @@ import numpy as np
 
 from math import log
 
-from query_expansion.config import (ALPHA, BETA, GAMMA, 
-								    TITLE, SUMMARY, CONTENT)
-from query_expansion.search_scrape import remove_punctuation_listify
+from .config import (ALPHA, BETA, GAMMA, 
+					 TITLE, SUMMARY, CONTENT)
+from .search_scrape import remove_punctuation_listify
 
 
 def compute_document_weighted_vector(ind):

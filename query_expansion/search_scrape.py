@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from multiprocessing.dummy import Pool as ThreadPool
 from googleapiclient.discovery import build
 
-from query_expansion.config import search_engine_id, key
+from .config import search_engine_id, key
 from pprint import pprint
 
 
