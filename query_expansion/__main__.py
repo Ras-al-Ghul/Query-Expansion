@@ -3,6 +3,7 @@ import threading
 import pickle
 
 from copy import deepcopy
+from collections import defaultdict
 
 from . import rocchio
 from . import search_scrape as sc
@@ -22,13 +23,14 @@ def main():
             print("precision - must be a float value between 0 and 1")
             return
 
-    cur_precision = 0.
-    prev_precision = 0.
+    cur_precision, prev_precision = 0., 0.
     words_to_eliminate = []
+    iter_no = 0
     
     while cur_precision < expected_precision:
-        print("query ", query)
+        print("Query: ", query)
         results = sc.search(query)
+        # Pickled query results for development data
         # with open("/home/dipankar/Desktop/Query-Expansion/query_expansion/elonmusk.pkl", "rb") as fp:
         #     results = pickle.load(fp)
 
@@ -37,6 +39,7 @@ def main():
             break
 
         relevant_documents, non_relevant_documents = [], []
+        bigrams = defaultdict(lambda: 0)
 
         res = deepcopy(results)
         t1 = threading.Thread(target=sc.get_feedback, 
@@ -51,6 +54,10 @@ def main():
                 args=(results,))
         t3.start()
         t3.join()
+        t4 = threading.Thread(target=sc.get_bigrams,
+                args=(results, bigrams))
+        t4.start()
+        t4.join()
         t1.join()
 
         cur_precision = len(relevant_documents)/len(results)
@@ -67,15 +74,20 @@ def main():
 
         # At this point, result is a list of 10 entries, with each entry having
         # an id, url, title, summary, and content
-        # Each of title, summary, content is list of lowercase strings
+        # Each of title, summary, content is a list of lowercase strings
         # print(results[0])
 
         ind = Index(results, query, words_to_eliminate)
         query = rocchio.enhance_query(
-            query, results, ind, relevant_documents, non_relevant_documents)
+            query, results, ind, bigrams,
+            relevant_documents, non_relevant_documents)
 
         prev_precision = cur_precision
         words_to_eliminate.extend(query.split(' ')[-2:])
+
+        iter_no += 1
+
+    print("Terminated in {} iterations.".format(iter_no))
 
 
 if __name__ == '__main__':

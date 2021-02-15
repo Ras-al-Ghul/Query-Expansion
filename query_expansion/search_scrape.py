@@ -38,6 +38,7 @@ def get_document_content(url):
         data = soup.findAll('p')
         data = [p.get_text().replace('\n', '').replace('\t', '') for p in data]
     except:
+        # timeout exception if resutls are not fetched
         pass
     return data
 
@@ -93,5 +94,14 @@ def process_input(res_list):
     for item in res_list:
         res = []
         for k in ('title', 'summary', 'content'):
-            if (item[k] is not None) and item[k] != []:
+            if item[k] != []:
                 item[k] = remove_punctuation_listify(item[k])
+
+
+# Extract bigrams from results
+def get_bigrams(res_list, bigrams):
+    for item in res_list:
+        for k in ('title', 'summary', 'content'):
+            if item[k] != []:
+                for i in range(len(item[k])-1):
+                    bigrams[(item[k][i], item[k][i+1])] += 1
