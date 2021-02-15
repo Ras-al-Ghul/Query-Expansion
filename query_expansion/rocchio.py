@@ -55,6 +55,6 @@ def enhance_query(query, results, ind, relevant, non_relevant):
 		ranked_terms.remove(ind.vectorizer['content'].vocabulary_[word])
 
 	temp = [query]
-	temp.extend([ind.vocab[index] for index in ranked_terms[-5:][::-1]])
+	temp.extend([ind.vocab[index] for index in ranked_terms[-2:][::-1]])
 
 	return ' '.join(temp)

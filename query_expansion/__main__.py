@@ -23,6 +23,8 @@ def main():
             return
 
     cur_precision = 0.
+    prev_precision = 0.
+    words_to_eliminate = []
     
     while cur_precision < expected_precision:
         print("query ", query)
@@ -60,15 +62,21 @@ def main():
         if cur_precision >= expected_precision:
             break
 
+        if cur_precision > prev_precision:
+            words_to_eliminate = words_to_eliminate[:-2]
+
         # At this point, result is a list of 10 entries, with each entry having
         # an id, url, title, summary, and content
         # Each of title, summary, content is list of lowercase strings
         # print(results[0])
 
-        ind = Index(results, query)
+        ind = Index(results, query, words_to_eliminate)
         query = rocchio.enhance_query(
             query, results, ind, relevant_documents, non_relevant_documents)
-    
+
+        prev_precision = cur_precision
+        words_to_eliminate.extend(query.split(' ')[-2:])
+
 
 if __name__ == '__main__':
     main()

@@ -20,9 +20,9 @@ def search(query_terms):
     items = result['items']
     pretty_results = [{
         'id': idx,
-        'url': item.get('link'),
-        'title': item.get('title'),
-        'summary': item.get('snippet')}
+        'url': item.get('link') if item.get('link') is not None else '',
+        'title': item.get('title') if item.get('title') is not None else '',
+        'summary': item.get('snippet') if item.get('snippet') is not None else ''}
         for idx, item in enumerate(items)]
 
     return pretty_results
