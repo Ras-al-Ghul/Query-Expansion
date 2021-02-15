@@ -79,12 +79,10 @@ python3 -m query_expansion "this is the query" 0.9
   </li>
   <li>We give seperate weightages for the words from Summary, Title and Content of html. As summary provided by the google query would contain the key words, while forming the feature vectors of each document, we give the highest weightage to the words present in the summary, followed by content and title.
   </li>
-  <li>We reorder the terms in the query after adding the new terms, using the bigrams generated from the content of the search results. Steps:
+  <li>We reorder the new terms in the query, using the bigrams generated from the content of the search results. Steps:
     <ul>
-      <li>Generate the list of bigrams and their probability from the content of the search results.</li>
-      <li>After query expansion, generate all permutations of the orders of terms present in the query.</li>
-      <li>For each permutation, genertate the bigrams of the query.</li>
-      <li>Pick the permutation with highest bigram probability as the new query.</li>
+      <li>Generate the list of bigrams and their frequency from the content of the search results.</li>
+      <li>Pick the order which has the highest bigram frequency.</li>
     </ul>
   </li>
 </ol>
