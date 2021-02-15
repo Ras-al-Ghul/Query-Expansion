@@ -21,6 +21,23 @@ An implementation of Rochhio's algorithm for Query Expansion (with user relevanc
 
 ## Steps to install and run
 
+<p>Install the rquirements from requirements.txt using the below command.</p>
+
+```
+ pip install -r requirements.txt
+```
+
+<p>Run the program using the following command.</p>
+
+```
+python3 -m query_expansion <query> <precision>
+```
+<p>Where query is a string of words that you want to search and precision is a decimal value. For example,</p>
+
+```
+python3 -m query_expansion "this is the query" 0.9
+```
+
 ## Design
 
 <ol>
