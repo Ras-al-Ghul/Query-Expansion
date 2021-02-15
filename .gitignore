@@ -1,4 +1,3 @@
-config.py
 .idea/*
 __pycache__/*
 query_expansion/__pycache__/*
