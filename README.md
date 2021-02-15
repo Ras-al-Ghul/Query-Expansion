@@ -46,11 +46,11 @@ An implementation of Rochhio's algorithm for Query Expansion (with user relevanc
 </ol>
 
 ## Algorithm
-<p>We use rocchio algorithm along with a few improvisations for the query expansion.</p>
+<p>We use rocchio algorithm along with a few improvisations for the query expansion. Goal is reach the expected precision@10 of search results with minimum number of query expansions. <a href="https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval)#Precision_at_K">Precision</a> is measured as the number of relevant documents seen in top 10 search result.</p>
 <ol>
   <li>Rocchio algorithm is used to rank and extract the words that can be used for the query expansion to obtain better results. Steps:
   <ul>
-    <li>Start with the inital query.</li>
+    <li>Start with the inital query and expected precision.</li>
     <li>Obtain the content of top 10 search results using google search api and bs4.</li>
     <li>Get user feedback to find the relevant and non relevant documents/search results.</li>
     <li>Extract the feature vectors of the documents</li>
