@@ -24,7 +24,7 @@ An implementation of Rochhio's algorithm for Query Expansion (with user relevanc
 <p>Install the rquirements from requirements.txt using the below command.</p>
 
 ```
- pip install -r requirements.txt
+ pip3 install -r requirements.txt
 ```
 
 <p>Run the program using the following command.</p>
