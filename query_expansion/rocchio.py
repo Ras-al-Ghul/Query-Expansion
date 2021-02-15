@@ -1,6 +1,7 @@
 import numpy as np
 
 from math import log
+from itertools import permutations
 
 from .config import (ALPHA, BETA, GAMMA, 
 					 TITLE, SUMMARY, CONTENT)
@@ -35,29 +36,48 @@ def compute_query_vector(q, ind):
 	return query_vector
 
 
-def order_query(q, bigrams):
-	dupq = q[::][-3:]
+def order_query(q, bigrams, candidates, iter_no):
+	q = q[0].split(' ')
+	dupq = q[::]
 	dupq = remove_punctuation_listify(dupq)
 
-	sc1, sc2 = 0, 0
+	if iter_no == 1:
+		if len(dupq) >= 2:
+			sc1, sc2 = 0, 0
+			cur, alt = tuple(dupq[-2:]), tuple(dupq[-2:][::-1])
 
-	if (dupq[0], dupq[1]) in bigrams:
-		sc1 += bigrams[(dupq[0], dupq[1])]
-	if (dupq[1], dupq[2]) in bigrams:
-		sc1 += bigrams[(dupq[1], dupq[2])]
-	
-	if (dupq[0], dupq[2]) in bigrams:
-		sc1 += bigrams[(dupq[0], dupq[2])]
-	if (dupq[2], dupq[1]) in bigrams:
-		sc1 += bigrams[(dupq[2], dupq[1])]
+			if cur in bigrams:
+				sc1 += bigrams[cur]
+			if alt in bigrams:
+				sc2 += bigrams[alt]
 
-	if sc1 < sc2:
-		q[-2:0] = q[-2:0][::-1]
+			if sc2 > sc1:
+				dupq[-2:] = dupq[-2:][::-1]
+				q[-2:] = q[-2:][::-1]
+
+	c1, c2, score = candidates[0], candidates[1], 0
+
+	for pair in list(permutations(range(len(candidates)), 2)):
+
+		w1, w2 = candidates[pair[0]], candidates[pair[1]]
+
+		sc = 0
+		if (dupq[-1], w1) in bigrams:
+			sc += bigrams[(dupq[-1], w1)]
+		if (w1, w2) in bigrams:
+			sc += bigrams[(w1, w2)]
+
+		if sc > score:
+			c1, c2 = w1, w2
+			score = sc
+
+	q.append(c1)
+	q.append(c2)
 
 	return q
 
 
-def enhance_query(query, results, ind, bigrams, relevant, non_relevant):
+def enhance_query(query, results, ind, bigrams, relevant, non_relevant, iter_no):
 	document_vectors = compute_document_weighted_vector(ind)
 	q = remove_punctuation_listify(query)
 	query_vector = compute_query_vector(q, ind)
@@ -73,13 +93,27 @@ def enhance_query(query, results, ind, bigrams, relevant, non_relevant):
 	new_query_vector = new_query_vector.clip(min=0)
 
 	ranked_terms = list(np.argsort(new_query_vector))
+
 	# remove query words from future choices
 	for word in q:
 		ranked_terms.remove(ind.vectorizer['content'].vocabulary_[word])
 
+	# words could share the same tfidf score, break ties with bigrams
+	vals = []
+	for i in ranked_terms[::-1]:
+		if new_query_vector[i] not in vals:
+			vals.append(new_query_vector[i])
+			if len(vals) >= 2:
+				break
+	
+	candidates = []
+	for i in ranked_terms[::-1]:
+		if new_query_vector[i] in vals:
+			candidates.append(ind.vocab[i])
+		else:
+			break
+
 	temp = [query]
-	print([(ind.vocab[index], new_query_vector[index]) for index in ranked_terms[-20:][::-1]])
-	temp.extend([ind.vocab[index] for index in ranked_terms[-2:][::-1]])
-	temp = order_query(temp, bigrams)
+	temp = order_query(temp, bigrams, candidates, iter_no)
 
 	return ' '.join(temp)

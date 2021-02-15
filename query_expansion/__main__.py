@@ -25,7 +25,7 @@ def main():
 
     cur_precision, prev_precision = 0., 0.
     words_to_eliminate = []
-    iter_no = 0
+    iter_no = 1
     
     while cur_precision < expected_precision:
         print("Query: ", query)
@@ -80,7 +80,7 @@ def main():
         ind = Index(results, query, words_to_eliminate)
         query = rocchio.enhance_query(
             query, results, ind, bigrams,
-            relevant_documents, non_relevant_documents)
+            relevant_documents, non_relevant_documents, iter_no)
 
         prev_precision = cur_precision
         words_to_eliminate.extend(query.split(' ')[-2:])
